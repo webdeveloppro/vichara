@@ -1,42 +1,28 @@
 {
-  "name": "vichara-front",
+  "name": "Vichara",
   "version": "1.0.0",
-  "description": "Vichara",
+  "description": "Vichara html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "webdevelop.pro",
   "private": true,
-  "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --config  build/webpack.base.conf.js",
-    "dev": "NODE_ENV=development webpack --mode development --config  build/webpack.base.conf.js",
-    "build": "rm -rf dist/* && NODE_ENV=production webpack --mode production --config  build/webpack.base.conf.js",
-    "lint": "NODE_ENV=production eslint --ext .js,.vue src test/unit",
-    "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src test/unit --fix",
-    "precommit": "npm run lint"
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rsync": "0.0.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "autoprefixer": "^9.3.1",
-    "babel-eslint": "^9.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "webpack": "^4.18.0",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-loader": "^8.0.2",
-    "eslint": "^5.5.0",
-    "eslint-config-airbnb-base": "^13.1.0"
-  },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 3 versions",
-    "not ie <= 8"
-  ]
+    "foundation-sites": "^6.5.1",
+    "jquery": "^3.3.1"
+  }
 }
