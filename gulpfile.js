@@ -39,9 +39,11 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
+	'app/libs/jquery/dist/jquery.min.js', // Беремо jQuery
     'node_modules/foundation-sites/js/foundation.js',
 		'app/js/common.js', // Always at the end
 		])
+	.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
