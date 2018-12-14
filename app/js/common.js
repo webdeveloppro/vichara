@@ -1,4 +1,4 @@
 $(function() {
-  window.jQuery = require('jquery');
+  window.jQuery = require('jQuery');
   window.Foundation = require('foundation.min.js');
 });
