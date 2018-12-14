@@ -1,76 +1,15 @@
 // style for main page
+
+$default-font: "roboto-example", sans-serif
+$font-regular: "Montserrat"
+$accent: orange
 $White_color: #Fff
-$Text_color: #333333
+$Text_color: #333
 $Accent_color: #F4b200
 $Black: #000
 $Background_Beige: #FDF9F0
 $Borders_color: #7E848C
 $blue: #63bbe2
-
-
-
-
-header
-	height: 88px;
-
-
-.logo
-	padding: 17px 0 22px 0;	
-
-.top-menu
-	 padding-left: 0;
-	 padding-right: 0;
-
-ul.main-nenu
-	margin: 0;
-	padding: 32px 0 32px 0;	
-	line-height: 1;
-
-ul.main-nenu li
-	margin: 0 18px;
-	line-height: 1;
-	display: inline-block;
-	color: $Text_color
-	font-weight: 500;
-
-ul.main-nenu li:first-of-type
-	margin: 0 7px 0 17px;
-
-ul.main-nenu li a	
-	color: $Text_color
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 1
-
-ul.main-nenu li a:hover
-	border-bottom: 1px solid $Accent_color;
-
-.entrance-cabinet 
-	padding: 0;
-  	
-.entrance-cabinet ul
-	margin: 0 0 0 50px;
-	padding: 27px 0 27px 0;	  	
-
-.entrance-cabinet ul li
-	line-height: 1;
-	display: inline-block;
-	color: $Text_color
-	margin: 0 12px 0 12px;
-
-
-.entrance-cabinet ul li a
-	font-size: 14px;
-	color: $Text_color
-	font-family: Montserrat;
-	font-weight: normal;
-
-.entrance-cabinet ul li.to-register	a
-	color: $White_color
-	background-color:  $Accent_color;
-	padding: 11px 27px 13px 27px;
-	border-radius: 28px;	
-
 
 .block-background-img
 	background: url(../img/bg.png);
@@ -86,6 +25,7 @@ ul.main-nenu li a:hover
 		margin-top: 90px;
 
 		a
+			font-family: $font-regular
 			font-size: 17px;
 			color: $White_color
 			background-color:  $Accent_color;
@@ -95,9 +35,9 @@ ul.main-nenu li a:hover
 
 
 .block-first-stage h3.title
-    font-size: 34px;
-    font-weight: 600;
-    color: $Black;
+    font-size: 34px
+    font-weight: 600
+    color: $Black
 
 .block-first-stage-bottom a
 	border: 1px solid $Accent_color;
@@ -114,28 +54,29 @@ ul.main-nenu li a:hover
 
  
 .block-first-stage
+	font-family: $font-regular
    padding-top: 140px;
    margin-bottom: 140px;
 
 
-   .block-first-stage-top
+.block-first-stage-top
    		margin-bottom: 70px;
  
-.first-block h6
-	::after
-    content: '555';
+
 
 .first-block
 	padding: 30px; 
 	box-shadow: 0 13px 40px 0 rgba(0, 0, 0, 0.08);
 
 	h6.title
+		font-family: $font-regular
 		font-weight: 500
 		color: $Accent_color;
 		font-size: 13px
 		text-transform: uppercase;
 
 	h3.title
+		font-family: $font-regular
 		font-weight: 600
 		color: $Black;
 		font-size: 24px	
@@ -143,26 +84,31 @@ ul.main-nenu li a:hover
   	
 
 .first-block ul
-  		margin: 0;	
+  		margin: 0;
 
-  		li
-  			display: inline-block;
-  			font-weight: normal
-  			font-size: 14px	
+.first-block ul	li
+		display: inline-block
+		font-weight: normal
+		font-size: 14px
+		font-family: $font-regular
 
 
-  		li.title
-  			font-weight: 500
-  			font-size: 14px
+.first-block ul	li.title
+		font-weight: 500
+		font-size: 14px
+		font-family: $font-regular
+
 
 .first-block p
+	font-family: $font-regular
 	margin: 35px 0 30px;
 	font-weight: normal;
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 1.7;
   	
 
 .togle
+	font-family: $font-regular
 	font-size: 14px;
 	font-weight: 600
 	cursor: pointer;
@@ -177,27 +123,31 @@ ul.main-nenu li a:hover
 	padding: 35px 35px 50px 35px; 	
 
 	h6.title
+		font-family: $font-regular
 		font-weight: 500
 		color: $Accent_color;
 		font-size: 13px
 		text-transform: uppercase;
 
 	h3.title
+		font-family: $font-regular
 		font-weight: 600
 		color: $Black;
 		font-size: 24px	
 		margin-bottom: 25px;
 
 .two-block ul
-  		margin: 0;	
+  		margin: 0;
 
-  		li
-  			display: inline-block;
-  			font-weight: normal
-  			font-size: 14px	
+.two-block ul li
+				font-family: $font-regular
+				display: inline-block;
+				font-weight: normal
+				font-size: 14px
 
 
-  		li.title
+.two-block ul li.title
+			font-family: $font-regular
   			font-weight: 500
   			font-size: 14px
 
@@ -216,6 +166,7 @@ ul.main-nenu li a:hover
 	padding-bottom: 100px;
 
 	h3.title
+		font-family: $font-regular
 		margin-top: 78px;
 		margin-bottom: 30px;
 		text-align: center;
@@ -225,7 +176,8 @@ ul.main-nenu li a:hover
 
 	h6
 		font-size: 14px;
-		text-align: center;	
+		text-align: center;
+		font-family: $font-regular
 	.icon	
 		padding-left: 50px;
 		padding-right: 50px;
@@ -240,6 +192,7 @@ ul.main-nenu li a:hover
 
 .about-learning
 	h2
+		font-family: $font-regular
 		font-size: 34px;
 		font-weight: 600
 		margin-top: 90px;
@@ -248,10 +201,12 @@ ul.main-nenu li a:hover
 		color: $Accent_color
 
 	div.text
+		font-family: $font-regular
 		margin-top: 45px;
 		line-height: 24px;
 
 		p
+			font-family: $font-regular
 			font-size: 14px;
 
 .our-other-projects
@@ -268,6 +223,7 @@ ul.main-nenu li a:hover
 		font-size: 34px
 		font-weight: 600
 		margin-bottom: 80px
+		font-family: $font-regular
 
 	.our-projects-block
 		width: 100%
@@ -283,6 +239,7 @@ ul.main-nenu li a:hover
 			font-weight: 600
 			height: 24px
 			margin-top: 32px
+			font-family: $font-regular
 
 		div.text
 			p.text
@@ -294,6 +251,7 @@ ul.main-nenu li a:hover
 				font-size: 14px
 				color: $Text_color
 				opacity: 0.65
+				font-family: $font-regular
 
 		.go-to-site
 			text-align: center
@@ -306,18 +264,22 @@ ul.main-nenu li a:hover
 			font-weight: 600
 			line-height: 22px
 			display: inline-block
+			font-family: $font-regular
 
 		.go-to-site	a .border
 			width: 25px
+			font-family: $font-regular
 			border-bottom: 2px solid $Accent_color
 
 
 		.go-to-site	a:hover .border
 				width: 100%
+				font-family: $font-regular
 				border-bottom: 2px solid $Accent_color
 
 
 	.our-projects-block:hover
+		font-family: $font-regular
 		box-shadow: 0 25px 65px rgba(0, 0, 0, 0.13)
 
 
@@ -330,6 +292,7 @@ ul.main-nenu li a:hover
 			padding: 0 115px
 
 		h6.our-projects-block-title
+			font-family: $font-regular
 			text-align: center
 			font-size: 14px
 			font-weight: 600
@@ -338,6 +301,7 @@ ul.main-nenu li a:hover
 
 		div.text
 			p.text
+				font-family: $font-regular
 				margin-top: 20px
 				line-height: 24px
 				text-align: center
@@ -348,11 +312,13 @@ ul.main-nenu li a:hover
 				opacity: 0.65
 
 		.go-to-site
+			font-family: $font-regular
 			text-align: center
 			margin-top: 40px
 
 
 		.go-to-site	a
+			font-family: $font-regular
 			color: $Black
 			font-size: 14px
 			font-weight: 600
@@ -380,6 +346,7 @@ ul.main-nenu li a:hover
 			padding: 0 115px
 
 		h6.our-projects-block-title
+			font-family: $font-regular
 			text-align: center
 			font-size: 14px
 			font-weight: 600
@@ -387,6 +354,7 @@ ul.main-nenu li a:hover
 			margin-top: 27px
 		div.text
 			p.text
+				font-family: $font-regular
 				margin-top: 20px
 				line-height: 24px
 				text-align: center
@@ -397,6 +365,7 @@ ul.main-nenu li a:hover
 				opacity: 0.65
 
 		.go-to-site
+			font-family: $font-regular
 			text-align: center
 			margin-top: 40px
 
@@ -420,6 +389,7 @@ ul.main-nenu li a:hover
 	margin-top: 180px
 
 	h2.title
+		font-family: $font-regular
 		font-size: 34px
 		font-weight: 600
 		line-height: 50px
@@ -427,6 +397,8 @@ ul.main-nenu li a:hover
 
 	div.text
 		p.text
+			font-family: $font-regular
+
 			margin-top: 20px
 			margin-bottom: 45px
 			font-size: 14px
@@ -434,6 +406,7 @@ ul.main-nenu li a:hover
 			font-weight: normal
 			line-height: 1.71
 			color: $Text_color
+			font-family: $font-regular
 	.calendar-block-row:hover
 		background-color: $Background_Beige
 
@@ -449,23 +422,29 @@ ul.main-nenu li a:hover
 			padding: 0
 
 		.text-block
+			font-family: $font-regular
 			padding: 0
 
 			ul
 				margin: 0
 			ul.first
+				font-family: $font-regular
 				margin: 25px 0 0 0
 			ul li
+				font-family: $font-regular
 				display: inline-block
 				line-height: 24px
 				font-size: 14px
 				font-weight: normal
 				color: $Text_color
+				font-family: $font-regular
 
 			ul li.title
 				font-weight: 500
+				font-family: $font-regular
 
 		h3.title
+			font-family: $font-regular
 			font-size: 14px
 			font-weight: 600
 			line-height: 22px
@@ -482,6 +461,7 @@ ul.main-nenu li a:hover
 				padding: 11px 33px 13px 33px
 
 			.linck span
+				font-family: $font-regular
 				margin-top: 50px
 
 
@@ -522,155 +502,8 @@ ul.main-nenu li a:hover
 
 
 
-footer
-	margin-top: 130px
-	.footer
-		border-top: 2px solid $Borders_color
-		padding-top: 60px
-		padding-bottom: 60px
-		.logo-block
-			.logo-footer
-				margin-bottom: 25px
-			p
-				font-size: 12px
-				line-height: 1.5
-				font-weight: normal
-				opacity: 0.45
-		ul
-			margin: 0
-		ul li
-			width: 49%
-			display: inline-block
-			font-size: 13px
-			font-weight: 500
-			line-height: 3
-			.linck-1 a .border
-				width: 25px
-				border-bottom: 2px solid transparent
-
-			.linck-1 a:hover
-				.border
-					width: 25px
-					border-bottom: 2px solid $Accent_color
-
-	.footer-media
-		ul
-			li
-				display: inline-block
-				width: 30px
-
-	.footer-contact
-		h4.title
-			font-size: 14px
-			font-weight: 500
-			line-height: 1.71
-			color: $Text_color
-		h5.phone
-			font-size: 14px
-			font-weight: 500
-			line-height: 1.71
-			color: $Text_color
-		h5.email
-			font-size: 14px
-			font-weight: 500
-			line-height: 1.71
-			color: $blue
 
 
 .right
 	float: right
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.linck-1 a
-	color: #000
-	font-size: 14px
-	font-weight: 600
-	line-height: 22px
-	display: inline-block
-.linck-1 a .border
-		width: 25px
-		border-bottom: 2px solid $Accent_color
-.linck-1 a:hover .border
-	width: 100%
-	border-bottom: 2px solid $Accent_color
-
-
-
-
-.linck
-	text-align: center
-	font-size: 14px
-	line-height: 24px
-	display: block
-	font-weight: normal
-	color: $Text_color
-
-.linck:hover
-	color: $Text_color
-	span
-		border-bottom: 2px dotted $Black
-
-
-
-
-
-
-.button-1
-	border-radius: 28px
-	font-size: 13px
-	padding: 11px 27px 13px 27px
-	background-color: $Accent_color
-	border: 2px solid transparent
-
-
-.button-1:hover
-	border: 2px solid $Accent_color
-	background-color: $White_color
-	color: $Black
-
-.button-1:active
-	border: 2px solid $Accent_color
-	background-color: $White_color
-	color: $Black
-.button-1:focus
-	border: 2px solid $Accent_color
-	background-color: $White_color
-	color: $Black
-
-
-.button-2
-	border-radius: 28px
-	font-size: 13px
-	padding: 11px 27px 13px 27px
-	border: 2px solid $Accent_color
-	background-color: $White_color
-	color: $Black
-
-
-.button-2:focus
-	color:  $White_color
-
-	background-color: $Accent_color
-	border: 2px solid transparent
-.button-2:hover
-	color:  $White_color
-
-	background-color: $Accent_color
-	border: 2px solid transparent
-.button-2:active
-	color:  $White_color
-
-	background-color: $Accent_color
-	border: 2px solid transparent
