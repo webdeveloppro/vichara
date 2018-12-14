@@ -2,6 +2,8 @@
 $White_color: #Fff
 $Text_color: #333333
 $Accent_color: #F4b200
+$Black: #000
+$Background_Beige: #FDF9F0 
 
 header
 	height: 88px;
@@ -12,6 +14,7 @@ header
 
 .top-menu
 	 padding-left: 0;
+	 padding-right: 0;
 
 ul.main-nenu
 	margin: 0;
@@ -19,18 +22,19 @@ ul.main-nenu
 	line-height: 1;
 
 ul.main-nenu li
-	margin: 0 15px;
+	margin: 0 18px;
 	line-height: 1;
 	display: inline-block;
 	color: $Text_color
+	font-weight: 500;
 
 ul.main-nenu li:first-of-type
-	margin: 0 15px 0 5px;
+	margin: 0 7px 0 17px;
 
 ul.main-nenu li a	
 	color: $Text_color
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 1
 
 ul.main-nenu li a:hover
@@ -40,7 +44,7 @@ ul.main-nenu li a:hover
 	padding: 0;
   	
 .entrance-cabinet ul
-	margin: 0 0 0 30px;
+	margin: 0 0 0 50px;
 	padding: 27px 0 27px 0;	  	
 
 .entrance-cabinet ul li
@@ -61,3 +65,349 @@ ul.main-nenu li a:hover
 	background-color:  $Accent_color;
 	padding: 11px 27px 13px 27px;
 	border-radius: 28px;	
+
+
+.block-background-img
+	background: url(../img/bg.png);
+	height: 900px;
+	object-fit: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+
+.block-background-img	.img 
+			margin-top: 225px;
+
+.block-background-img .add-kurs 
+		margin-top: 90px;
+
+		a
+			font-size: 17px;
+			color: $White_color
+			background-color:  $Accent_color;
+			padding: 15px 50px 15px 50px;
+			border-radius: 28px;
+
+
+
+.block-first-stage h3.title
+    font-size: 34px;
+    font-weight: 600;
+    color: $Black;
+
+.block-first-stage-bottom a
+	border: 1px solid $Accent_color;
+	width: 223px;
+	border-radius: 28px;
+	padding: 12px 50px;
+	font-size: 13px;
+	color: $Black;
+	float: right;
+
+.block-first-stage-bottom a:hover
+	color: $White_color;
+	background-color:  $Accent_color;
+
+ 
+.block-first-stage
+   padding-top: 140px;
+   margin-bottom: 140px;
+
+
+   .block-first-stage-top
+   		margin-bottom: 70px;
+ 
+.first-block h6
+	::after
+    content: '555';
+
+.first-block
+	padding: 30px; 
+	box-shadow: 0 13px 40px 0 rgba(0, 0, 0, 0.08);
+
+	h6.title
+		font-weight: 500
+		color: $Accent_color;
+		font-size: 13px
+		text-transform: uppercase;
+
+	h3.title
+		font-weight: 600
+		color: $Black;
+		font-size: 24px	
+		    margin-bottom: 15px;
+  	
+
+.first-block ul
+  		margin: 0;	
+
+  		li
+  			display: inline-block;
+  			font-weight: normal
+  			font-size: 14px	
+
+
+  		li.title
+  			font-weight: 500
+  			font-size: 14px
+
+.first-block p
+	margin: 35px 0 30px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.8;
+  	
+
+.togle
+	font-size: 14px;
+	font-weight: 600
+	cursor: pointer;
+	width: 25px;
+	border-bottom: 2px solid transparent;
+
+
+.togle:hover
+	border-bottom: 2px solid $Accent_color;	
+
+.two-block .text-block
+	padding: 35px 35px 50px 35px; 	
+
+	h6.title
+		font-weight: 500
+		color: $Accent_color;
+		font-size: 13px
+		text-transform: uppercase;
+
+	h3.title
+		font-weight: 600
+		color: $Black;
+		font-size: 24px	
+		margin-bottom: 25px;
+
+.two-block ul
+  		margin: 0;	
+
+  		li
+  			display: inline-block;
+  			font-weight: normal
+  			font-size: 14px	
+
+
+  		li.title
+  			font-weight: 500
+  			font-size: 14px
+
+.two-block .togle
+	margin-top: 60px;		
+
+.two-block .img img
+	width: 100%;
+
+.two-block 
+	border: 1px solid rgba(126, 132, 140, 0.17);	
+
+.block-icon 
+	background-color:  $Background_Beige;
+	width: 100%;
+	padding-bottom: 100px;
+
+	h3.title
+		margin-top: 78px;
+		margin-bottom: 30px;
+		text-align: center;
+		line-height: 1;
+		font-size: 40px
+		font-weight: bold
+
+	h6
+		font-size: 14px;
+		text-align: center;	
+	.icon	
+		padding-left: 50px;
+		padding-right: 50px;
+
+
+
+	.row-icon 
+		margin-top: 50px;	
+
+.how-course-work
+	height: 240px;
+
+.about-learning
+	h2
+		font-size: 34px;
+		font-weight: 600
+		margin-top: 90px;
+
+	span
+		color: $Accent_color
+
+	div.text
+		margin-top: 45px;
+		line-height: 24px;
+
+		p
+			font-size: 14px;
+
+.our-other-projects
+	.logo-img
+		padding: 0 55px
+
+.our-other-projects
+	margin-bottom: 190px
+	margin-top: 110px
+
+	h2
+		width: 100%
+		text-align: center
+		font-size: 34px
+		font-weight: 600
+		margin-bottom: 80px
+
+	.our-projects-block
+		width: 100%
+		border: 1px solid rgba(126,132,140,.17)
+		padding: 40px 35px 58px 35px
+
+		.img
+			padding: 0 60px
+
+		h6.our-projects-block-title
+			text-align: center
+			font-size: 14px
+			font-weight: 600
+			height: 24px
+			margin-top: 32px
+
+		div.text
+			p.text
+				margin-top: 20px
+				line-height: 24px
+				text-align: center
+				font-weight: normal
+				letter-spacing: normal
+				font-size: 14px
+				color: $Text_color
+				opacity: 0.65
+
+		.go-to-site
+			text-align: center
+			margin-top: 40px
+
+
+		.go-to-site	a
+			color: $Black
+			font-size: 14px
+			font-weight: 600
+			line-height: 22px
+			display: inline-block
+
+		.go-to-site	a .border
+			width: 25px
+			border-bottom: 2px solid $Accent_color
+
+
+		.go-to-site	a:hover .border
+				width: 100%
+				border-bottom: 2px solid $Accent_color
+
+
+	.our-projects-block:hover
+		box-shadow: 0 25px 65px rgba(0, 0, 0, 0.13)
+
+
+	.our-projects-tw0-block
+		width: 100%
+		border: 1px solid rgba(126,132,140,.17)
+		padding: 40px 35px 58px 35px
+
+		.img
+			padding: 0 115px
+
+		h6.our-projects-block-title
+			text-align: center
+			font-size: 14px
+			font-weight: 600
+			height: 24px
+			margin-top: 20px
+
+		div.text
+			p.text
+				margin-top: 20px
+				line-height: 24px
+				text-align: center
+				font-weight: normal
+				letter-spacing: normal
+				font-size: 14px
+				color: $Text_color
+				opacity: 0.65
+
+		.go-to-site
+			text-align: center
+			margin-top: 40px
+
+
+		.go-to-site	a
+			color: $Black
+			font-size: 14px
+			font-weight: 600
+			line-height: 22px
+			display: inline-block
+
+		.go-to-site	a .border
+			width: 25px
+			border-bottom: 2px solid $Accent_color
+
+
+		.go-to-site	a:hover .border
+			width: 100%
+			border-bottom: 2px solid $Accent_color
+	.our-projects-tw0-block:hover
+		box-shadow: 0 25px 65px rgba(0, 0, 0, 0.13)
+	.our-projects-third-block:hover
+		box-shadow: 0 25px 65px rgba(0, 0, 0, 0.13)
+	.our-projects-third-block
+		width: 100%
+		border: 1px solid rgba(126,132,140,.17)
+		padding: 40px 35px 58px 35px
+
+		.img
+			padding: 0 115px
+
+		h6.our-projects-block-title
+			text-align: center
+			font-size: 14px
+			font-weight: 600
+			height: 24px
+			margin-top: 27px
+		div.text
+			p.text
+				margin-top: 20px
+				line-height: 24px
+				text-align: center
+				font-weight: normal
+				letter-spacing: normal
+				font-size: 14px
+				color: $Text_color
+				opacity: 0.65
+
+		.go-to-site
+			text-align: center
+			margin-top: 40px
+
+
+		.go-to-site	a
+			color: $Black
+			font-size: 14px
+			font-weight: 600
+			line-height: 22px
+			display: inline-block
+
+		.go-to-site	a .border
+			width: 25px
+			border-bottom: 2px solid $Accent_color
+
+
+		.go-to-site	a:hover .border
+			width: 100%
+			border-bottom: 2px solid $Accent_color
