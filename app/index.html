@@ -883,7 +883,53 @@
 
 
 	</footer>
+	<div class="row"><div class="large-12 columns"><button type="button" id="button1">Click Me!</button></div></div>
+	<div class="row collapse">
+		<div class="medium-3 columns">
+			<ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+				<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+				<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+				<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+				<li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+				<li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
+				<li class="tabs-title"><a href="#panel6v">Tab 6</a></li>
+			</ul>
+		</div>
+		<div class="medium-9 columns">
+			<div class="tabs-content vertical" data-tabs-content="example-vert-tabs" id="tab_content">
+				<div class="tabs-panel is-active" id="panel1v">
+					<p>Test1</p>
+				</div>
+				<div class="tabs-panel" id="panel2v">
+					<p>Test2</p>
+				</div>
+				<div class="tabs-panel" id="panel3v">
+					<p>Test3</p>
+				</div>
+				<div class="tabs-panel" id="panel4v">
+					<p>Test4</p>
+				</div>
+				<div class="tabs-panel" id="panel5v">
+					<p>Test5</p>
+				</div>
+				<div class="tabs-panel" id="panel6v">
+					<p>Test6</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		
+        $(document).ready(function() {
+            $(document).foundation();
 
+            $("#button1").click(function() {
+                $("#example-vert-tabs").append('<li class="tabs-title"><a href="#panel7v">Tab 7</a></li>');
+                $("#tab_content").append('<div class="tabs-panel" id="panel7v"><p>Test7</p></div>');
+                $(".tabs").foundation();
+            });
+        });
+	</script>
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="js/common.js"></script>
 <script src="js/scripts.min.js"></script>
