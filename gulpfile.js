@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
-  .pipe(sass({ includePaths: 'node_modules/foundation-sites/scss' }).on("error", notify.onError()))
+  .pipe(sass({ includePaths: 'node_modules/foundation-sites/scss/' }).on("error", notify.onError()))
   // .pipe(sass({ includePaths: 'node_modules/foundation-sites/scss', errLogToConsole: true})).on('error', handleError)
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
@@ -39,7 +39,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	 return gulp.src([ // Беремо всі необхідні бібліотеки
-	'app/libs/jquery/dist/jquery.js', // Беремо jQuery
+	'node_modules/jquery/dist/jquery.js', // Беремо jQuery
+	'node_modules/foundation-sites/js/foundation.core.js',
     'node_modules/foundation-sites/js/foundation.js',
 		'app/js/common.js', // Always at the end (завжди вкінці)
 		])

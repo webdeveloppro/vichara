@@ -41,7 +41,7 @@
 			  <div class="entrance-cabinet medium-3 columns">
 					<ul>
 
-						<li class="in"><a href="#">Войти</a></li>
+						<li class="in"><a href="come-in.html">Войти</a></li>
 						<li class="to-register"><a href="#">Зарегистрироваться</a></li>
 
 					</ul>
@@ -617,7 +617,7 @@
 						</div>
 						<div class="columns medium-2 button-group">
 							<div class="block">
-								<a href="#" class="button button-2 right">Узнать подробнее
+								<a href="calendar.html" class="button button-2 right">Узнать подробнее
 								</a>
 								<a href="#" class="linck"><span> Узнать подробнее</span>
 								</a>
@@ -778,7 +778,7 @@
 			<div class="columns small-12 small-12">
 				<div class="footer">
 					<div class="row">
-						<div class="columns  medium-3 small-8 small-offset-2 small-order-4">
+						<div class="columns  medium-3 medium-order-1 medium-offset-0 small-8 small-offset-2 small-order-4">
 							<div class="logo-block">
 								<div class="logo-footer">
 									<img src="img/logotype.png" alt="logo">
@@ -789,7 +789,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="columns  medium-4 small-12 small-order-2 ">
+						<div class="columns  medium-4 medium-order-2 small-12 small-order-2 ">
 							<div class="menu-footer">
 								<ul>
 									<li>
@@ -844,7 +844,7 @@
 							</div>
 
 						</div>
-						<div class="columns  medium-2 small-8 small-offset-2 small-order-1">
+						<div class="columns  medium-2 medium-order-3 medium-offset-0 small-8 small-offset-2 small-order-1">
 							<div class="footer-media right">
 								<ul>
 									<li><a href=""><img src="img/facebook.png" alt=""></a></li>
@@ -855,7 +855,7 @@
 
 							</div>
 						</div>
-						<div class="columns  medium-3 small-12 small-order-3">
+						<div class="columns  medium-3 medium-order-4 small-12 small-order-3">
 							<div class="footer-contact">
 								<h4 class="title">
 									Контакты "Всемирной Общины <br>Санатана Дхармы":
@@ -883,9 +883,55 @@
 
 
 	</footer>
-
+	<div class="row"><div class="large-12 columns"><button type="button" id="button1">Click Me!</button></div></div>
+	<div class="row collapse">
+		<div class="medium-3 columns">
+			<ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+				<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+				<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+				<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+				<li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+				<li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
+				<li class="tabs-title"><a href="#panel6v">Tab 6</a></li>
+			</ul>
+		</div>
+		<div class="medium-9 columns">
+			<div class="tabs-content vertical" data-tabs-content="example-vert-tabs" id="tab_content">
+				<div class="tabs-panel is-active" id="panel1v">
+					<p>Test1</p>
+				</div>
+				<div class="tabs-panel" id="panel2v">
+					<p>Test2</p>
+				</div>
+				<div class="tabs-panel" id="panel3v">
+					<p>Test3</p>
+				</div>
+				<div class="tabs-panel" id="panel4v">
+					<p>Test4</p>
+				</div>
+				<div class="tabs-panel" id="panel5v">
+					<p>Test5</p>
+				</div>
+				<div class="tabs-panel" id="panel6v">
+					<p>Test6</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="js/common.js"></script>
+	<!--<script>-->
+
+        <!--$(document).ready(function() {-->
+            <!--$(document).foundation();-->
+
+            <!--$("#button1").click(function() {-->
+                <!--$("#example-vert-tabs").append('<li class="tabs-title"><a href="#panel7v">Tab 7</a></li>');-->
+                <!--$("#tab_content").append('<div class="tabs-panel" id="panel7v"><p>Test7</p></div>');-->
+                <!--$(".tabs").foundation();-->
+            <!--});-->
+        <!--});-->
+	<!--</script>-->
+
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
