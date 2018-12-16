@@ -13,7 +13,7 @@ var gulp          = require('gulp'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
 		rsync         = require('gulp-rsync');
-
+    pM_folder     = './node_modules';
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
@@ -39,9 +39,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	 return gulp.src([ // Беремо всі необхідні бібліотеки
-	'node_modules/jquery/dist/jquery.js', // Беремо jQuery
-	'node_modules/foundation-sites/js/foundation.core.js',
-    'node_modules/foundation-sites/js/foundation.js',
+    pM_folder+'/jquery/dist/jquery.js',
+    pM_folder+'/foundation-sites/dist/js/foundation.min.js',
 		'app/js/common.js', // Always at the end (завжди вкінці)
 		])
 
