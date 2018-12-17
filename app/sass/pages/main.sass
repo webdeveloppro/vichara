@@ -61,59 +61,97 @@ $blue: #63bbe2
 
 .block-first-stage-top
    		margin-bottom: 70px;
- 
+.block-first-stage .first-block-active
+	display: none
+.block-first-stage .two-block-active
+	display: none
+.block-first-stage .three-block-active
+	display: none
+.block-first-stage .toggle
+	margin-top: 60px
+
+	.linck-1 p
+		color: #000
+		font-size: 14px
+		font-weight: 600
+		line-height: 22px
+		display: inline-block
+	.linck-1 p .border
+		width: 25px
+		border-bottom: 2px solid $Accent_color
+	.linck-1 p:hover .border
+		width: 100%
+		border-bottom: 2px solid $Accent_color
+.block-first-stage .block-active .toggle
+	margin-top: 30px
 
 
-.first-block
-	padding: 30px; 
-	box-shadow: 0 13px 40px 0 rgba(0, 0, 0, 0.08);
+.block-first-stage
+	.block-stage
+		padding: 30px;
+		box-shadow: 0 13px 40px 0 rgba(0, 0, 0, 0.08);
+	.block-active  ul
+		margin: 0;
 
-	h6.title
+	.block-active  ul	li
+			display: inline-block
+			font-weight: normal
+			font-size: 14px
+			font-family: $font-regular
+
+	.block-active  ul	li.title
+			font-weight: 500
+			font-size: 14px
+			font-family: $font-regular
+
+
+	.block-active p
+		font-family: $font-regular
+		margin: 35px 0 30px;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.7;
+
+	.block-active  ul	li.title
+			font-weight: 500
+			font-size: 14px
+			font-family: $font-regular
+
+
+	.block-active p
+		font-family: $font-regular
+		margin: 35px 0 30px
+		font-weight: normal
+		font-size: 14px
+		line-height: 1.7
+	.block-active  h6.title
 		font-family: $font-regular
 		font-weight: 500
 		color: $Accent_color;
 		font-size: 13px
 		text-transform: uppercase;
 
-	h3.title
+	.block-active  h3.title
 		font-family: $font-regular
 		font-weight: 600
 		color: $Black;
-		font-size: 24px	
-		    margin-bottom: 15px;
+		font-size: 24px
+			margin-bottom: 15px;
+
+	.togle
+		font-family: $font-regular
+		font-size: 14px;
+		font-weight: 600
+		cursor: pointer;
+		width: 25px;
+		border-bottom: 2px solid transparent
+
   	
 
-.first-block ul
-  		margin: 0;
-
-.first-block ul	li
-		display: inline-block
-		font-weight: normal
-		font-size: 14px
-		font-family: $font-regular
 
 
-.first-block ul	li.title
-		font-weight: 500
-		font-size: 14px
-		font-family: $font-regular
 
 
-.first-block p
-	font-family: $font-regular
-	margin: 35px 0 30px;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.7;
-  	
-
-.togle
-	font-family: $font-regular
-	font-size: 14px;
-	font-weight: 600
-	cursor: pointer;
-	width: 25px;
-	border-bottom: 2px solid transparent;
 
 
 .togle:hover
@@ -190,6 +228,54 @@ $blue: #63bbe2
 
 .how-course-work
 	height: 240px;
+
+.course-arranged
+	margin-top: 225px;
+	h2.title
+		font-size: 40px
+		line-height: 1.25
+		font-weight: bold
+		font-family: $font-regular
+		margin-bottom: 110px
+	ul.tabs
+		background: none
+		border: none
+		li.is-active
+			span.line
+				width: 25px
+				height: 3px
+				background: $Accent_color
+				display: inline-block
+				margin: 0 10px 5px 0
+		li
+			span.line
+
+
+			a
+				font-size: 24px
+				font-weight: 600
+				font-family: $font-regular
+				line-height: 2.08
+				color: $Text_color
+				padding: 0
+				display: inline-block
+
+
+			p
+				opacity: 0.65
+				font-size: 14px
+				font-family: $font-regular
+				font-weight: normal
+				font-style: normal
+				line-height: 1.71
+	tabs-title a:focus, .tabs-title a[aria-selected=true]
+		background: none
+		color: $Text_color
+
+	.tabs-content.vertical
+		background: none
+		border: none
+
 
 .about-learning
 	h2

@@ -7,4 +7,45 @@ $(document).ready(function() {
       $(".tabs").foundation();
   });
 });
+
+    $(document).ready(function() {
+        $('.block-first-stage .first-block .toggle').on('click', function () {
+            $('.first-block-active').toggle();
+            $('.first-block').toggle();
+        });
+    });
+    $(document).ready(function() {
+        $('.block-first-stage .first-block-active .toggle').on('click', function () {
+            $('.first-block-active').toggle();
+            $('.first-block').toggle();
+        });
+    });
+
+
+    $(document).ready(function() {
+        $('.block-first-stage .two-block-d .toggle').on('click', function () {
+            $('.two-block-active').toggle();
+            $('.two-block-d').toggle();
+        });
+    });
+    $(document).ready(function() {
+        $('.block-first-stage .two-block-active .toggle').on('click', function () {
+            $('.two-block-active').toggle();
+            $('.two-block-d').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.block-first-stage .three-block-d .toggle').on('click', function () {
+            $('.three-block-active').toggle();
+            $('.three-block-d').toggle();
+        });
+    });
+    $(document).ready(function() {
+        $('.block-first-stage .three-block-active .toggle').on('click', function () {
+            $('.three-block-active').toggle();
+            $('.three-block-d').toggle();
+        });
+    });
+
 });
