@@ -6,9 +6,28 @@ $(document).ready(function() {
       $("#tab_content").append('<div class="tabs-panel" id="panel7v"><p>Test7</p></div>');
       $(".tabs").foundation();
   });
+
 });
 
     $(document).ready(function() {
+
+        $('header i.fa').on('click', function () {
+
+            $('.mobile-menu').toggle();
+            $('.page').toggle();
+            $('header').toggle();
+            $('footer').toggle();
+        });
+
+        $('.mobile-menu i.toggle').on('click', function () {
+            $('.mobile-menu').toggle();
+            $('.page').toggle();
+            $('header').toggle();
+            $('footer').toggle();
+        });
+    });
+    $(document).ready(function() {
+
         $('.block-first-stage .first-block .toggle').on('click', function () {
             $('.first-block-active').toggle();
             $('.first-block').toggle();
