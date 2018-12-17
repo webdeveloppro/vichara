@@ -12,8 +12,8 @@ $grin: #48a31b
 $red: red
 
 
-#page-come-in
-	padding-bottom: 150px
+#page-registr
+	padding-bottom: 100px;
 	.block-img-come-in img
 		position: absolute
 	h2.title
@@ -25,13 +25,23 @@ $red: red
 		color: $Black
 	p.text
 		margin-top: 24px
+		opacity: 0.6
 		font-size: 14px
 		line-height: 1.71
 		font-family: $font-regular
 
-	.email-label
+	.eror
 		bottom: 0
 		padding-top: 30px
+
+	.eror-label
+		bottom: 0
+		padding-top: 30px
+
+		.text-eror
+			position: absolute
+			width: 150px
+
 	span.ok
 		color: $grin
 		padding-left: 10px
@@ -47,8 +57,6 @@ $red: red
 			border-top-right-radius: 20px
 			border-bottom-right-radius: 20px
 			margin-bottom: 0
-
-
 	.eror
 		color: $red
 	.forgot-password
@@ -72,8 +80,14 @@ $red: red
 			padding: 4px
 			font-family: $font-regular
 			margin: 0
+	.form
+		margin-top: 65px
+	.registr .form
+		margin-top: 0px
+	.registr-1
+		//display: none
 .social-networks h4
-	margin-top: 100px
+	margin-top: 50px
 	font-size: 14px
 	font-family: $font-regular
 
@@ -100,3 +114,15 @@ $red: red
 	opacity: 0.4
 #page-come-in span.text
 	padding-left: 10px
+#page-registr div.button-1
+	display: -webkit-inline-box
+	cursor: pointer
+#page-registr .registr
+	display: none
+
+#page-registr .registr span.back
+	cursor: pointer
+	margin-left: 15px
+	font-size: 14px
+#page-registr .registr span.back :hover
+		border-bottom: 2px dotted #000

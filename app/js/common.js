@@ -47,6 +47,18 @@ $(document).ready(function() {
             $('.three-block-d').toggle();
         });
     });
+    /*--------------------------------------page-registr---------------*/
+    $(document).ready(function() {
+        $('#page-registr .registr .back').on('click', function () {
+            $('#page-registr .registr').toggle();
+            $('#page-registr .registr-1').toggle();
+        });
+        $('#page-registr .registr-1 .next').on('click', function () {
+            $('#page-registr .registr').toggle();
+            $('#page-registr .registr-1').toggle();
+        });
+
+    });
 
 });
 
