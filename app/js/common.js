@@ -11,6 +11,7 @@ $(document).ready(function() {
 
     $(document).ready(function() {
 
+
         $('header i.fa').on('click', function () {
 
             $('.mobile-menu').toggle();
