@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 });
 
+    var elem = $('#elem-to-animate');
 
     $(document).ready(function() {
     $('header i.fa').on('click', function () {
@@ -23,23 +24,6 @@ $(document).ready(function() {
         }
     });
 
-
-
-
-
-        // $('header i.fa').on('click', function () {
-        //     $('.top-menu').toggle();
-        //     $('.page').toggle();
-        //
-        // });
-        //
-        // $('.mobile-menu i.toggle').on('click', function () {
-        //     $('.mobile-menu').toggle();
-        //     $('.page').toggle();
-        //     $('header').toggle();
-        //     $('footer').toggle();
-        // });
-    });
     $(document).ready(function() {
 
         $('.block-first-stage .first-block .toggle').on('click', function () {
@@ -94,4 +78,4 @@ $(document).ready(function() {
     });
 
 });
-
+});
