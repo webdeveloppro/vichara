@@ -37,6 +37,7 @@ gulp.task('styles', function() {
 	.pipe(browserSync.stream())
 });
 
+
 gulp.task('scripts', function() {
 	 return gulp.src([ // Беремо всі необхідні бібліотеки
     pM_folder+'/jquery/dist/jquery.js',

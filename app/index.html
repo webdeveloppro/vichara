@@ -33,62 +33,39 @@
 				</a>
 			</div>
 		</div>
-
-
 		<div class="top-menu medium-6 medium-offset-1 columns">
-			<ul class="main-nenu">
-				<li><a href="#">Cтупени</a></li>
-				<li><a href="#">Об обучении</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="calendar.html">События</a></li>
-				<li><a href="#">Библиотека</a></li>
-			</ul>
-		</div>
-		<div class="entrance-cabinet medium-3 columns">
-			<ul>
-				<li class="in"><a href="come-in.html">Войти</a></li>
-				<li class="to-register"><a href="registr.html">Зарегистрироваться</a></li>
-			</ul>
-		</div>
-		<div class="column small-6">
-			<i class="fa fa-align-right"></i>
-
-		</div>
-
-
-
-
-
-	</div>
-
-
-
-
-</header>
-    <div class="mobile-menu">
-        <div class="row">
-            <div class="coloums small-12">
-                <i class="fas fa-times toggle"></i>
-            </div>
-
-            <div class="columns small-10 small-offset-1">
-                <ul class="main-nenu">
+            <div class="wrap-menu">
+                <ul class="main-menu">
                     <li><a href="#">Cтупени</a></li>
                     <li><a href="#">Об обучении</a></li>
                     <li><a href="#">Новости</a></li>
-                    <li><a href="#">События</a></li>
+                    <li><a href="calendar.html">События</a></li>
                     <li><a href="#">Библиотека</a></li>
                 </ul>
-                <div class="media">
-                    <ul>
-                        <li><a href=""><img src="img/facebook.png" alt=""></a></li>
-                        <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-                        <li><a href=""><img src="img/vk.png" alt=""></a></li>
-                        <li><a href=""><img src="img/fb.png" alt=""></a></li>
-                    </ul>
 
-                </div>
-                <div class="footer-contact">
+                <ul  class="media media-icon">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-contact">
                     <h4 class="title">
                         Контакты "Всемирной Общины <br>Санатана Дхармы":
 
@@ -99,14 +76,28 @@
                         +38 097-415-1900
                     </h5>
                     <h5 class="email">
-                        sadhuloka@gmail.com
+                        <a href="mailto:sadhuloka@gmail.com">
+                            sadhuloka@gmail.com
+                        </a>
 
                     </h5>
                 </div>
-
             </div>
-        </div>
-    </div>
+
+
+		</div>
+		<div class="entrance-cabinet medium-3 columns">
+			<ul>
+				<li class="in"><a href="come-in.html">Войти</a></li>
+				<li class="to-register"><a href="registr.html">Зарегистрироваться</a></li>
+			</ul>
+		</div>
+		<div class="column small-6">
+			<i class="fa fa-align-right toggle"></i>
+		</div>
+	</div>
+</header>
+
     <div id="home-page" class="page">
 	<div class="container fluid">
 		<div>
@@ -656,7 +647,14 @@
 
 						</p>
 					</li>
-					<li id="text-3"  class="tabs-title"><span class="line"></span><a href="#tab3">Подтверждение изучения</a>
+					<li id="text-3"  class="tabs-title comp-tex "><span class="line"></span><a href="#tab3">Подтверждение изучения</a>
+						<p class="text text-3">
+
+							Получите документы об учебе и поделитесь своим успехом с друзьями, коллегами и работодателями.
+
+						</p>
+					</li>
+					<li id="text-mob"  class="tabs-title mob-tex"><span class="line"></span><a href="#tab3">Сертификат</a>
 						<p class="text text-3">
 
 							Получите документы об учебе и поделитесь своим успехом с друзьями, коллегами и работодателями.
@@ -709,7 +707,7 @@
   	</div>
 	<div class="our-other-projects">
 		<div class="row">
-			<div class="columns small-12 medium-2 medium-offset-5">
+			<div class="columns small-2 small-offset-5 medium-2 medium-offset-5">
 				<div class="logo-img">
 					<img src="img/lotus.png" alt="">
 				</div>
@@ -953,12 +951,15 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="columns  medium-2 medium-offset-5">
-						<div class="linck-1">
+					<div class="columns small-8 small-offset-3 medium-2 medium-offset-5">
+						<div class="linck-1 comp">
 							<a href="#">
 								Больше событий
 								<div class="border"></div>
 							</a>
+						</div>
+						<div class="button-group mob">
+							<a href="#" class="button button-1">Больше событий</a>
 						</div>
 					</div>
 				</div>
@@ -1114,8 +1115,47 @@
 				</div>
 			</div>
 
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                    <div class="orbit-controls">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                    </div>
+                    <ul class="orbit-container">
+                        <li class="is-active orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                                <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                                <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                                <figcaption class="orbit-caption">Encapsulating</figcaption>
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                                <figcaption class="orbit-caption">Outta This World</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+            </div>
 
-	
 		</footer>
 
     </div>
