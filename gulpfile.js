@@ -28,8 +28,9 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
-  .pipe(sass({ includePaths: 'node_modules/foundation-sites/scss/' }).on("error", notify.onError()))
+  	.pipe(sass({ includePaths: 'node_modules/foundation-sites/scss/' }).on("error", notify.onError()))
   // .pipe(sass({ includePaths: 'node_modules/foundation-sites/scss', errLogToConsole: true})).on('error', handleError)
+  	.pipe(sass({ includePaths: 'node_modules/motion-ui/src'}))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
