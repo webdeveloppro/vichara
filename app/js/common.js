@@ -14,6 +14,7 @@ $(document).ready(function() {
     $(document).ready(function() {
     $('header i.fa').on('click', function () {
         $('.top-menu').toggle();
+        $('header .logo').toggle();
         if ($('.top-menu').is(':visible')) {
             $("header i.toggle").removeClass('fa-align-right');
             $("header i.toggle").addClass('fa-times');
