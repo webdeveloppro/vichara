@@ -90,8 +90,8 @@ $blue: #63bbe2
 		padding-right: 0
 
 	body .social-networks ul.social-networks li
-		display: block
-		width: 120px
+		display: inline-block
+		width: 30%
 		margin-top: 15px
 	//
 	//body .social-networks ul.social-networks li a
@@ -172,9 +172,33 @@ $blue: #63bbe2
 		right: 0
 		min-height: 568px
 		height: 100vh
+		ul.main-menu
+			padding-top: 0
+
+
+	.entrance-cabinet ul li.in
+		margin-bottom: 25px
+	.entrance-cabinet ul li.in a
+		color: #fff
+		background-color: #f4b200
+		padding: 11px 27px 13px 27px
+		-webkit-border-radius: 28px
+		border-radius: 28px
+		top: -10px
+		position: relative
+		margin-bottom: 25px
+
+	.entrance-cabinet ul li.to-register a
+		color: #000
+		background: none
 
 	.entrance-cabinet
-		display: none
+		.entrance-cabinet-right
+			float: none
+		ul
+			li
+				display: block
+				text-align: center
 	ul.media-icon
 		display: block
 		margin: 0
