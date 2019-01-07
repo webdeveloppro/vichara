@@ -1,0 +1,158 @@
+// style for header page
+
+$default-font: "roboto-example", sans-serif
+$font-regular: "Montserrat"
+$accent: orange
+$White_color: #Fff
+$Text_color: #333
+$Accent_color: #F4b200
+$Black: #000
+$Background_Beige: #FDF9F0
+$Borders_color: #7E848C
+$blue: #63bbe2
+.mobile-menu
+	display: none
+header i.fa
+	position: absolute
+	top: 25px
+	right: 20px
+	font-size: 30px
+	color: $accent
+	display: none
+
+
+header
+	height: 88px
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.06)
+
+
+.logo
+	padding: 17px 0 22px 0
+
+.top-menu
+	padding-left: 0
+	padding-right: 0
+
+ul.main-menu
+	margin: 0
+	padding: 32px 0 32px 0
+	line-height: 1
+
+ul.main-menu li
+	font-family: $font-regular
+	color: $Text_color
+	margin: 0 18px
+	line-height: 1
+	display: inline-block
+	font-weight: 500
+
+ul.main-menu li:first-of-type
+	margin: 0 7px 0 17px
+
+ul.main-menu li a
+	font-family: Montserrat
+	color: $Text_color
+	font-size: 13px
+	font-weight: 500
+	line-height: 1
+
+ul.main-menu li a:hover
+	transition: all 0.3s ease;
+	border-bottom: 1px solid $Accent_color;
+
+ul.main-menu li a.active
+	transition: all 0.3s ease;
+	border-bottom: 1px solid $Accent_color;
+header
+	.media-icon
+		display: none
+.entrance-cabinet
+	padding: 0;
+.header-contact
+	display: none
+.entrance-cabinet ul
+	margin: 0
+	padding: 27px 0 27px 0;
+
+.entrance-cabinet ul li
+	line-height: 1;
+	display: inline-block;
+	color: $Text_color
+	margin: 0 12px 0 12px;
+
+
+.entrance-cabinet ul li a
+	font-size: 14px;
+	color: $Text_color
+	font-family: $font-regular
+	font-weight: normal;
+.entrance-cabinet ul li.in a:hover
+	transition: all 0.3s ease;
+	border-bottom: 2px dotted #000;
+.entrance-cabinet ul li.to-register
+	margin: 0
+.entrance-cabinet ul li.to-register	a
+	color: $White_color
+	background-color:  $Accent_color;
+	padding: 11px 27px 13px 27px;
+	border-radius: 28px;
+
+
+.block-background-img
+	background: url(../img/bg.png);
+	height: 900px;
+	object-fit: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+
+/*---------------------------------media-icon---------------------------*/
+.media-icon
+	a
+
+
+	i
+		font-size: 14px
+		line-height: 1.5
+		color: orange
+		border: 2px solid orange
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		width: 24px
+		text-align: center
+
+
+
+/*--------------------------------------------input-------------------------*/
+.input-1
+	border-radius: 28px
+	font-size: 14px
+	font-family: $font-regular
+	opacity: 0.4
+.select-1
+	border-radius: 28px
+	font-size: 14px
+	font-family: $font-regular
+	opacity: 0.4
+.input-group
+	border-radius: 25px
+	input
+		border-top-left-radius: 20px
+		border-bottom-left-radius: 20px
+	span
+		border-top-right-radius: 20px
+		border-bottom-right-radius: 20px
+		background-color: #f0f0f0
+		color: $Black
+	span:hover
+		border-top-right-radius: 20px
+		border-bottom-right-radius: 20px
+		background-color: #f0f0f0
+
+	span:active
+		border-top-right-radius: 20px
+		border-bottom-right-radius: 20px
+		background-color: #f0f0f0
+	span:focus
+		border-top-right-radius: 20px
+		border-bottom-right-radius: 20px
+		background-color: #f0f0f0
